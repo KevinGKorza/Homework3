@@ -1,3 +1,4 @@
+//Code Assignment
 var generateBtn = document.querySelector("#generate");
 //An array containing uppercase letters A-Z
 var uppercaseCharset = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -49,35 +50,13 @@ function generatePassword() {
   }
 
   //new password will go here 
-  var password = []:
+  var randomPassword = [];
   //this is the loop which is needed for the password generation 
   for (var i = 0; i < firstMessage; i++) {
     var allChoices = choices[Math.floor(Math.random() * choices.length)];
     randomPassword.push(allChoices);
   }
-  return randomPassword.join("");
+  return randomPassword.join('');
 }
 
-generateBtn.addEventListener("click", writePassword);
-
-
-
-
-
-
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
