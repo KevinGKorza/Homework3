@@ -10,7 +10,7 @@ var choices= [];
 function writePassword() {
     var password = generatePassword();
     console.log(password)
-    var passwordText = document.querySelector("#password;"); 
+    var passwordText = document.querySelector("#password");
     passwordText.value = password;
 }
 //Will tell user to add the value in their password, if they don't add it then they'll get an alert message saying to
@@ -42,6 +42,9 @@ for (var i = 0; i < passwordLength; i++) {
     randomPassword.push(allChoices);
  }
 return randomPassword.join("");
+
 }
+
 //Add event listener to generate button, without this no options would generate 
 generateBtn.addEventListener("click",writePassword); 
+
