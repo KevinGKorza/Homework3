@@ -34,7 +34,7 @@ if (choices.length == 0) {
     alert("Please try again!");
 }
 
-//New password will go here, found in console logs (inspect > Console)
+//New password will go here
 var randomPassword = []; 
 //This is the loop which is needed for the password generation 
 for (var i = 0; i < passwordLength; i++) {
