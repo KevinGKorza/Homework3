@@ -48,3 +48,4 @@ return randomPassword.join("");
 //Add event listener to generate button, without this no options would generate 
 generateBtn.addEventListener("click",writePassword); 
 
+
